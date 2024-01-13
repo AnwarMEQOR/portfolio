@@ -1,3 +1,4 @@
+<!-- HERO START-->
 <section class="bg-home position-relative align-self-center" id="home">
 	<div class="bg-overlay"></div>
 	<div class="container position-relative z-1">
@@ -46,3 +47,31 @@
 		<span class="wheel bg-light mx-auto position-relative d-block mover"></span>
 	</a>
 </section>
+<!-- HERO END-->
+<!-- INTERESTS START-->
+<section class="container my-5 py-5">
+	<div class="section-title justify-content-center text-center position-relative">
+		<h4
+			class="title-line fs-3 fw-semibold position-relative d-inline-block z-2 text-uppercase mb-5"
+		>
+			Hobbies &amp; Interests
+		</h4>
+		<span></span>
+		<p class="text-muted mx-auto para-desc mb-0">
+			In Pursuit of Balance, A Glimpse into the Hobbies and Activities That Keep Me Inspired
+		</p>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-3 col-md-4 col-12 mt-4" *ngFor="let hobby of hobbies">
+			<div class="interests-desc bg-light position-relative px-2 py-3 rounded">
+				<div class="hobbies d-flex align-items-center">
+					<i class="bi bi-{{ hobby.icon }} position-absolute start-0 ms-2"></i>
+					<h6 class="mb-0 ms-5">{{ hobby.name }}</h6>
+				</div>
+			</div>
+		</div>
+		<!--end col-->
+	</div>
+</section>
+<!-- INTERESTS END-->
