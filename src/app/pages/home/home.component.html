@@ -75,3 +75,24 @@
 	</div>
 </section>
 <!-- INTERESTS END-->
+<!-- STATS START-->
+<section class="container-fluid my-5 py-5">
+	<div class="counter rounded py-md-5 py-4">
+		<div class="container">
+			<div class="row" id="counter" #counter>
+				<div class="col-lg-3 col-6" *ngFor="let counter of counters">
+					<div class="rounded py-3 text-center">
+						<i class="bi bi-{{ counter.icon }} text-primary fs-3"></i>
+						<h3 class="mt-3 text-white title-dark">
+							{{ counter.count }}
+						</h3>
+						<h6 class="font-weight-normal mb-0 text-white">
+							{{ counter.name }}
+						</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- STATS END-->
