@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core'
+import { Component, HostListener, OnDestroy, OnInit } from '@angular/core'
 import { NgClass } from '@angular/common'
 
 @Component({
@@ -8,10 +8,19 @@ import { NgClass } from '@angular/common'
 	templateUrl: './navbar.component.html',
 	styleUrl: './navbar.component.scss',
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit, OnDestroy {
 	public scrolled: boolean = false
 	public isCollapsed: boolean = true
 	public isLargeScreen: boolean = window.innerWidth > 992
+
+	ngOnInit() {
+		this.updateIsLargeScreen()
+		window.addEventListener('resize', this.updateIsLargeScreen)
+	}
+
+	ngOnDestroy() {
+		window.removeEventListener('resize', this.updateIsLargeScreen)
+	}
 
 	@HostListener('window:scroll', [])
 	onWindowScroll() {
@@ -19,5 +28,8 @@ export class NavbarComponent {
 	}
 	toggleCollapse(): void {
 		this.isCollapsed = !this.isCollapsed
+	}
+	private updateIsLargeScreen = (): void => {
+		this.isLargeScreen = window.innerWidth > 992
 	}
 }
