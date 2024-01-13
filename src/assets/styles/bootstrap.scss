@@ -1,0 +1,36 @@
+// Functions first
+@import '../../../node_modules/bootstrap/scss/functions';
+// Variable overrides second
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$primary: #e54b4b;
+$dark: #212529;
+$min-contrast-ratio: 3;
+$navbar-light-color: $dark;
+$navbar-dark-color: #fff;
+$navbar-light-hover-color: $primary;
+$navbar-dark-hover-color: $primary;
+$navbar-light-active-color: $primary;
+$navbar-dark-active-color: $primary;
+$nav-link-font-size: 0.7rem;
+$nav-link-font-weight: 600;
+$navbar-nav-link-padding-x: 1.2rem;
+$prefix: 'am-';
+// Required Bootstrap imports
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/variables-dark';
+@import '../../../node_modules/bootstrap/scss/maps';
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import '../../../node_modules/bootstrap/scss/root';
+// Optional components
+@import '../../../node_modules/bootstrap/scss/utilities';
+@import '../../../node_modules/bootstrap/scss/grid';
+@import '../../../node_modules/bootstrap/scss/navbar';
+@import '../../../node_modules/bootstrap/scss/nav';
+@import '../../../node_modules/bootstrap/scss/buttons';
+@import '../../../node_modules/bootstrap/scss/containers';
+@import '../../../node_modules/bootstrap/scss/reboot';
+@import '../../../node_modules/bootstrap/scss/type';
+@import '../../../node_modules/bootstrap/scss/forms/form-control';
+@import '../../../node_modules/bootstrap/scss/card';
+@import '../../../node_modules/bootstrap/scss/helpers/position';
+@import '../../../node_modules/bootstrap/scss/utilities/api';

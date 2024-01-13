@@ -1,0 +1,66 @@
+<nav
+	class="navbar navbar-expand-lg fixed-top py-3 z-3 navbar-custom"
+	[ngClass]="{ 'navbar-light bg-light': scrolled, 'navbar-dark': !scrolled }"
+>
+	<div class="container">
+		<a
+			class="navbar-brand fs-2 me-0"
+			[ngClass]="{ 'text-light': !scrolled, 'text-dark': scrolled }"
+			href="/"
+		>
+			Anwar
+		</a>
+		<button class="navbar-toggler" type="button" (click)="toggleCollapse()">
+			<i class="bi bi-list-nested"></i>
+		</button>
+		<div class="collapse navbar-collapse" [ngClass]="{ show: !isCollapsed || isLargeScreen }">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item">
+					<a class="nav-link active" href="#home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#services">Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#resume">Resume</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#projects">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#news">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+
+			<ul class="list-unstyled mb-0">
+				<li class="list-inline-item">
+					<a
+						href="https://www.linkedin.com/in/anwarmeqor/"
+						target="_blank"
+						[class.text-light]="!scrolled"
+						><i class="bi bi-linkedin"></i
+					></a>
+				</li>
+				<li class="list-inline-item">
+					<a
+						href="https://github.com/AnwarMEQOR"
+						target="_blank"
+						[class.text-light]="!scrolled"
+						><i class="bi bi-github mx-2"></i
+					></a>
+				</li>
+				<li class="list-inline-item">
+					<a
+						href="https://gitlab.com/AnwarMEQOR"
+						target="_blank"
+						[class.text-light]="!scrolled"
+						><i class="bi bi-gitlab"></i
+					></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
