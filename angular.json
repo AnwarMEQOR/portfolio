@@ -34,7 +34,8 @@
               "src/assets/styles/bootstrap.scss",
               "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
-            "scripts": [],
+            "scripts": []
+          },
           "configurations": {
             "production": {
               "budgets": [
