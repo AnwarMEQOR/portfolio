@@ -1,11 +1,17 @@
 <nav
 	class="navbar navbar-expand-lg fixed-top py-3 z-3 navbar-custom"
-	[ngClass]="{ 'navbar-light bg-light': scrolled, 'navbar-dark': !scrolled }"
+	[ngClass]="{
+		'navbar-light bg-light': scrolled || (!isLargeScreen && !isCollapsed),
+		'navbar-dark': (isLargeScreen && !scrolled) || (!isLargeScreen && !scrolled && isCollapsed)
+	}"
 >
 	<div class="container">
 		<a
 			class="navbar-brand fs-2 me-0"
-			[ngClass]="{ 'text-light': !scrolled, 'text-dark': scrolled }"
+			[ngClass]="{
+				'text-light': !scrolled,
+				'text-dark': scrolled || (!isCollapsed && !isLargeScreen)
+			}"
 			href="/"
 		>
 			Anwar
@@ -40,7 +46,7 @@
 					<a
 						href="https://www.linkedin.com/in/anwarmeqor/"
 						target="_blank"
-						[class.text-light]="!scrolled"
+						[class.text-light]="!scrolled && isLargeScreen"
 						><i class="bi bi-linkedin"></i
 					></a>
 				</li>
@@ -48,7 +54,7 @@
 					<a
 						href="https://github.com/AnwarMEQOR"
 						target="_blank"
-						[class.text-light]="!scrolled"
+						[class.text-light]="!scrolled && isLargeScreen"
 						><i class="bi bi-github mx-2"></i
 					></a>
 				</li>
@@ -56,7 +62,7 @@
 					<a
 						href="https://gitlab.com/AnwarMEQOR"
 						target="_blank"
-						[class.text-light]="!scrolled"
+						[class.text-light]="!scrolled && isLargeScreen"
 						><i class="bi bi-gitlab"></i
 					></a>
 				</li>
