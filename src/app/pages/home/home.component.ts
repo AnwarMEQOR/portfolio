@@ -54,6 +54,22 @@ export class HomeComponent implements OnInit {
 			text: 'Prioritizing the security of your digital assets with comprehensive cybersecurity solutions. Implementing robust security protocols and ensuring data protection',
 		},
 	]
+	positions: { role: string; company: string; desc: string; from: string; to: string }[] = [
+		{
+			role: 'Lead Full Stack Engineer',
+			company: 'Appartoo',
+			desc: "In my role as Lead Full Stack Developer at Appartoo, I steered the creation of a user-friendly dashboard designed to simplify the process of finding the perfect flat. My work involved revitalizing the company's main website, enhancing its appeal and functionality to better serve our clients in the real estate sector. My focus was not just on technical excellence but also on ensuring a seamless and enjoyable experience for our users.",
+			from: 'Oct 2022',
+			to: 'Present',
+		},
+		{
+			role: 'Front End Developer',
+			company: 'AXILOR',
+			desc: 'At Axilor, my role as a Front End Developer revolved around building an e-commerce platform specifically for automotive parts. I focused on creating an intuitive and engaging shopping experience, allowing users to easily find and purchase the parts they needed. In addition to the customer-facing aspects, I developed a comprehensive dashboard to help the business manage operations smoothly, ensuring everything from inventory to customer service ran like a well-oiled machine.',
+			from: 'Feb 2021',
+			to: 'Sep 2022',
+		},
+	]
 	@ViewChild('counter') counterElement: ElementRef | undefined
 	hasAnimatedCounter = false // To ensure the counter animation only runs once
 	ngOnInit() {
