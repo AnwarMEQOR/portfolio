@@ -16,7 +16,12 @@
 		>
 			Anwar
 		</a>
-		<button class="navbar-toggler" type="button" (click)="toggleCollapse()">
+		<button
+			class="navbar-toggler"
+			type="button"
+			aria-label="Navbar Toggle"
+			(click)="toggleCollapse()"
+		>
 			<i class="bi bi-list-nested"></i>
 		</button>
 		<div class="collapse navbar-collapse" [ngClass]="{ show: !isCollapsed || isLargeScreen }">

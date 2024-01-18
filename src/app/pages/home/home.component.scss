@@ -2,7 +2,7 @@
 	background-size: cover;
 	background-position: center center;
 	padding: 13rem 0;
-	background-image: url('/assets/images/home/hero.png');
+	background-image: url('/assets/images/home/hero.webp');
 	.bg-overlay {
 		background-color: rgba(#3c4858, 0.7);
 		position: absolute;
@@ -34,6 +34,10 @@
 		.mover {
 			-webkit-animation: mover 1s infinite alternate;
 			animation: mover 1s infinite alternate;
+		}
+		.small-pic {
+			width: 10rem;
+			height: 10rem;
 		}
 	}
 	@keyframes mover {
@@ -112,7 +116,7 @@
 	}
 }
 .counter {
-	background: url('/assets/images/home/bg-counter.png') center center;
+	background: url('/assets/images/home/bg-counter.webp') center center;
 }
 .about-hero {
 	&:before {

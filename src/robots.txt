@@ -1,0 +1,4 @@
+Sitemap: https://www.anwarmeqor.com/sitemap.xml
+User-agent: *
+
+Allow: /*
