@@ -36,8 +36,8 @@
 			animation: mover 1s infinite alternate;
 		}
 		.small-pic {
-			width: 10rem;
-			height: 10rem;
+			width: 10rem !important;
+			height: auto;
 		}
 	}
 	@keyframes mover {
