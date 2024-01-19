@@ -4,29 +4,28 @@
 	<div class="container position-relative z-1">
 		<div class="row mt-5 mt-sm-0 justify-content-center">
 			<div class="col-12 text-center">
-				<div class="title-heading">
+				<div class="small-pic position-relative d-block mx-auto">
 					<img
-						src="assets/images/home/profile.webp"
-						class="img-fluid rounded-circle border border-3 border-light-subtle small-pic"
-						width="192"
-						height="192"
+						ngSrc="assets/images/home/profile.webp"
+						class="img-fluid rounded-circle border border-3 border-light-subtle"
+						fill="true"
 						alt="Anwar MEQOR's Profile Picture"
 					/>
-					<h1 class="heading fw-bold text-primary mt-3">Anwar MEQOR</h1>
-					<h2 class="fs-4 text-light">
-						I am a
-						<span
-							class="text-primary"
-							[appTypingEffect]="[
-								'Software Engineer',
-								'DevOps Engineer',
-								'CyberSecurity Specialist'
-							]"
-						>
-							CyberSecurity Specialist</span
-						><span>|</span>
-					</h2>
 				</div>
+				<h1 class="heading fw-bold text-primary mt-3">Anwar MEQOR</h1>
+				<h2 class="fs-4 text-light">
+					I am a
+					<span
+						class="text-primary"
+						[appTypingEffect]="[
+							'Software Engineer',
+							'DevOps Engineer',
+							'CyberSecurity Specialist'
+						]"
+					>
+						CyberSecurity Specialist</span
+					><span>|</span>
+				</h2>
 			</div>
 		</div>
 	</div>
@@ -59,11 +58,11 @@
 		<div class="col-md-5">
 			<div class="position-relative about-hero">
 				<img
-					src="assets/images/home/profile.webp"
-					class="rounded-3 w-100"
+					ngSrc="assets/images/home/profile-large.webp"
+					class="rounded-3 w-100 object-fit-cover"
 					alt="Anwar's profile picture"
-					width="400"
-					height="500"
+					fill="true"
+					priority="true"
 				/>
 			</div>
 		</div>
